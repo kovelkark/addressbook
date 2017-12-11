@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.edurekademo.tutorial</groupId>
+    <groupId>com.github.kovelkark</groupId>
     <artifactId>addressbook_main</artifactId>
     <packaging>war</packaging>
-    <version>1.1.1-SNAPSHOT</version><!--test-->
+    <version>1.1.0-SNAPSHOT</version><!--test-->
     <name>Vaadin Addressbook example</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,20 +16,20 @@
 		   <skipTests>false</skipTests>
            <skipITs>${skipTests}</skipITs>
            <skipUTs>${skipTests}</skipUTs>
-		   	        <github.account>SeshagiriSriram</github.account>
+		   	        <github.account>kovelkark</github.account>
 
     </properties>
 	
 		<distributionManagement>
 		<snapshotRepository>
-			<id>${env.ART_ID}</id>
-			<name>${env.ART_NAME}</name>
-			<url>${env.ART_URL}</url>
+			<id>devopsSnapshots</id>
+			<name>devopsSnapshots</name>
+			<url>http://node02.example.com:8081/nexus/content/repositories/devopsSnapshots</url>
 		</snapshotRepository>
 		<repository>
-		<id>${env.REL_ART_ID}</id>
-			<name>${env.REL_ART_NAME}</name>
-			<url>${env.REL_ART_URL}</url>
+		<id>devopsReleases</id>
+			<name>devopsReleases</name>
+			<url>http://node02.example.com:8081/nexus/content/repositories/devopsReleases</url>
 		</repository>
 
 	</distributionManagement>
